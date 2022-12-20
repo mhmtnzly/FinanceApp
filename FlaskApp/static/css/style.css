@@ -1,0 +1,101 @@
+@font-face {
+	font-family: Ubuntu-Regular;
+	src: url('../fonts/ubuntu/Ubuntu-Regular.ttf'); 
+  }
+  
+@font-face {
+font-family: Ubuntu-Bold;
+src: url('../fonts/ubuntu/Ubuntu-Bold.ttf'); 
+}
+h1 {
+	color: darkblue;
+	font-size:60px;
+}
+
+body {
+	background: #f4f4f4;
+}
+
+#demo{
+	font-size: 12px;
+	color: darkblue;
+}
+
+.limiter {
+	width: 100%;
+	margin: 0 auto;
+  }
+  
+  .container-login100 {
+	width: 100%;  
+	min-height: 100vh;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+	
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;;
+  }
+  .wrap-login100 {
+	width: 390px;
+	background: #fff;
+	border-radius: 10px;
+	position: relative;
+  }
+  .container-login100-form-btn {
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
+  }
+  .login100-form-btn {
+	font-family: Ubuntu-Bold;
+	font-size: 16px;
+	color: #fff;
+	line-height: 1.2;
+	text-transform: uppercase;
+  
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 20px;
+	width: 100%;
+	height: 62px;
+	background-color: #827ffe;
+	border-radius: 3px;
+  
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+  }
+  
+  .login100-form-btn:hover {
+	background-color: #403866;
+  }
+  .login100-form-title {
+	font-family: Ubuntu-Bold;
+	font-size: 30px;
+	color: #403866;
+	line-height: 1.2;
+	text-transform: uppercase;
+	text-align: center;
+  
+	width: 100%;
+	display: block;
+  }
+ 

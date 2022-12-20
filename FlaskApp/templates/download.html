@@ -1,0 +1,22 @@
+{% extends 'base.html' %} {% block content %}
+<div class="limiter">
+  <div class="container-login100">
+    <div class="wrap-login100 p-t-50 p-b-90">
+      <div class="shadow p-3 mb-5 bg-body rounded">
+        <form method="POST">
+          {{ form.hidden_tag() }} {{ form.file_name.label(class="form-label") }}
+          {{ form.file_name(class="form-control") }}
+          <br />
+          {{ form.file_type.label(class="form-label") }} {{
+          form.file_type(class="form-control") }}
+          <div>
+            <a href="{{ url_for('home')}}" class="txt1"> Back </a>
+          </div>
+          <br />
+          {{ form.submit(class="btn btn-secondary") }}
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

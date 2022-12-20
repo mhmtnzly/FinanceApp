@@ -1,0 +1,42 @@
+{% extends 'base.html' %} {% block content %}
+<div>
+  <form method="POST">
+    {{ form_get.hidden_tag() }} {{ form_get.file_name.label(class="form-label")
+    }} {{ form_get.file_name(class="form-control") }}
+    <br />
+    {{ form_get.start_date.label(class="form-label") }} {{
+    form_get.start_date(class="form-control") }}
+    <br />
+    {{ form_get.end_date.label(class="form-label") }} {{
+    form_get.end_date(class="form-control") }}
+    <br />
+    {{ form_get.submit(class="btn btn-secondary") }}
+  </form>
+</div>
+
+<table style="width: 100%">
+  <tr>
+    <td>Name</td>
+    <td>Date</td>
+    <td>Low</td>
+    <td>Open</td>
+    <td>Volume</td>
+    <td>High</td>
+    <td>Close</td>
+    <td>AdjustedClose</td>
+  </tr>
+  {% for row in rows %}
+  <tr>
+    <td>{{row.name}}</td>
+    <td>{{row.date}}</td>
+    <td>{{row.low}}</td>
+    <td>{{row.open}}</td>
+    <td>{{row.volume}}</td>
+    <td>{{row.high}}</td>
+    <td>{{row.close}}</td>
+    <td>{{row.adjustedClose}}</td>
+  </tr>
+
+  {% endfor %}
+</table>
+{% endblock %}
